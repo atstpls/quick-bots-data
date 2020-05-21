@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  bots:
+    image: splunk/splunk:latest
+    hostname: bots
+    container_name: bots
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=h3lloW@rld
+      - SPLUNK_HOME=/opt/splunk
+    volumes:
+      - ./apps:/opt/splunk/etc/apps
+    ports:
+      - 8000:8000
