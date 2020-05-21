@@ -12,3 +12,4 @@ for i in $(ls *.tgz);do tar -xvf $i;done
 git clone https://github.com/splunk/SA-ctf_scoreboard.git
 git clone https://github.com/splunk/SA-ctf_scoreboard_admin.git
 
+cd ..
